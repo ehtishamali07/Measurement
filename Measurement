@@ -1,0 +1,24 @@
+/*Write C program to convert distance in meter, feet, inches and centimeter if given in kms*/
+
+
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+    float km, cm, inch, feet, mtr;
+    
+    printf("Enter the distance in Kilometer(km)=");
+    scanf("%f",&km);
+    
+    mtr=km*1000;
+    cm=mtr*100;
+    inch=cm/2.54;
+    feet=inch/12;
+    
+    printf("\n Distance in Meter is %f\n",mtr);
+    printf("\n Distance in Centimeter is %f\n",cm);
+    printf("\n Distance in Inch is %f\n", inch);
+    printf("\n Distance in Feet is %f\n", feet);
+    getch();
+    }
